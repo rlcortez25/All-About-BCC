@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About BCC | Home</title>
+    <link rel="stylesheet" href="hstyle.css">
+</head>
+<body>
+    <style>
+        /* Add your styles for the containers here */
+        .containerBox {
+            display: inline-block;
+            width: 27%; /* Adjust the width as needed */
+            height: 320px; /* Set a fixed height */
+            margin: 5px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left; /* Justify the text */
+            background-color: goldenrod; /* Set background color to white */
+            overflow: auto; /* Add overflow to make sure the content is scrollable if it exceeds the fixed height */
+        }
+
+
+        h2{
+            color: white;
+        }
+        p{
+            text-align: justify;
+            margin-top: 8px;
+            color: white;
+        }
+        .containerBox ul {
+            margin-left: 20px; /* Add some margin for better visual appearance */
+            list-style-type: square; /* Apply list-style-type directly to the ul tag */
+            color: green; /* Apply color to the text of the ul */
+        }
+
+        .containerBox li {
+            margin-left: -10px;
+            color: white;
+        }
+    </style>
+    <div class="banner">
+        <div class="slider">
+            <img src="images/BCC.JPG" id="slideImg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div>
+                
+                <ul class="opacity-effect" style="margin-left: 130px;">
+                    <li style="margin-left: 30px;"><a href='index.html'>Home</a></li>
+                    <li><a href='programs.html'>Programs</a></li>
+                    <li><a href='admission.html'>Admission</a></li>
+                    <li><a href='about.html'>About Us</a></li>
+                    <li><a class="signinHover" href='signin.html'>Sign in</a></li>
+                </ul>
+            </div>
+            <center>
+              <!-- Container for Incoming Freshmen -->
+              <div class="containerBox">
+                  <h2>Incoming Freshmen</h2>
+                  <p>To be admitted, all incoming freshmen should pass the admission test conducted by the Guidance Office and Testing Center.</p>
+                  <ul style="list-style-type: none;">
+                      <li>1. Form 138 or High School Report Card</li>
+                      <li>2. Certificate of Good Moral Character</li>
+                      <li>3. Two (2) copies of 2x2 colored picture</li>
+                      <li>4. PSA Birth Certificate (Photocopy)</li>
+                      <li>5. One (1) Long brown envelope</li>
+                  </ul>
+              </div>
+
+              <!-- Container for Transferees -->
+              <div class="containerBox">
+                  <h2>Transferees</h2>
+                  <p>The school admits transferees from other educational institutions provided that they have complied with the requirements and procedure provided above for incoming freshmen and the following additional documentary requirements:</p>
+                  <ul style="list-style-type: none;">
+                      <li>1. Certificate of Transfer Credential</li>
+                      <li>2. Original Scholastic Records from the institution enrolled in</li>
+                      <li>3. PSA Birth Certificate/Marriage Certificate</li>
+                      <li>4. 2x2 Colored Pictures (2)</li>
+                  </ul>
+              </div>
+
+              <!-- Container for Cross Enrollees -->
+              <div class="containerBox">
+                  <h2>Cross Enrollees</h2>
+                  <p>Cross-Enrollees from other educational institutions for any academic subjects and/or any of the NSTP components are required to submit the following documentary requirements:</p>
+                  <ul style="list-style-type: none;">
+                      <li>1. Cross-Enrollment Permit from the home school duly signed by their Dean</li>
+                      <li>2. Letter addressed to the Registrar requesting that the cross-enrollee be admitted stating therein the reasons for such request</li>
+                      <li>3. One (1) Long Brown Envelope</li>
+                  </ul>
+              </div>
+          </center>
+      </div>
+  </div>
+</body>
+</html>

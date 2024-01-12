@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About BCC | Home</title>
+    <link rel="stylesheet" href="hstyle.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="slider">
+            <img src="images/1.jpg" id="slideImg" class="active">
+            <img src="images/3.jpg" id="slideImg2">
+        </div>
+        
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <ul class="opacity-effect" style="margin-left: 130px;">
+                    <li style="margin-left: 30px;"><a href='index.html'>Home</a></li>
+                    <li><a href='programs.html'>Programs</a></li>
+                    <li><a href='admission.html'>Admission</a></li>
+                    <li><a href='about.html'>About Us</a></li>
+                    <li><a class="signinHover" href='signin.html'>Sign in</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const slider = document.querySelector('.slider');
+        let isTransitioning = false;
+      
+        function nextSlide() {
+          if (!isTransitioning) {
+            isTransitioning = true;
+            setTimeout(() => {
+              const firstSlide = slider.children[0];
+              slider.style.transition = 'none';
+             
+              setTimeout(() => {
+                slider.style.transition = 'transform 1.5s ease-in-out';
+                slider.style.transform = 'translate(0)';
+                firstSlide.remove();
+                slider.appendChild(firstSlide);
+                isTransitioning = false;
+              }, 0);
+            }, 500);
+          }
+        }
+      
+        setInterval(nextSlide, 5000); // 
+      </script>
+
+</body>
+</html>
